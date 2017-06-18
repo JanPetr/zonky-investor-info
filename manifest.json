@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Zonky Investor plugin",
+	"description": "Zonky super investor plugin",
+	"version": "1.0",
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+	"permissions": [
+		"activeTab",
+		"https://app.zonky.cz/*"
+	],
+	"content_scripts": [{
+		"matches": ["https://app.zonky.cz/*"],
+		"js": [
+			"js/jquery-3.2.1.min.js",
+			"js/content.js"
+		],
+		"css": [
+			"css/plugin.css"
+		],
+		"run_at": "document_end"
+	}]
+}

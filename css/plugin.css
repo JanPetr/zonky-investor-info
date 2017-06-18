@@ -1,0 +1,10 @@
+.zp_already-calculated table.zp_calculated-values {
+	width: 100%;
+	padding: 5px;
+	background-color: #ddfbff;
+}
+
+.zp_already-calculated table.zp_calculated-values tr td:nth-child(2) {
+	text-align: right;
+	white-space: nowrap;
+}
