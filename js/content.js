@@ -42,10 +42,10 @@ var ZonkyPlugin = {
 		// return this.feeRates[this.getRating($el)];
 	},
 	getRating: function($el) {
-		return $el.find('.story-card__summary--rating strong').text().trim();
+		return $el.find('[data-test-marketplace-index-item-summary="rating"] strong').text().trim();
 	},
 	getMonths: function($el) {
-		var plain = $el.find('.story-card__summary--term').text(),
+		var plain = $el.find('[data-test-marketplace-index-item-summary="term"]').text(),
 			monthsString = plain.substring(0, plain.length - 7);
 		
 		return parseInt(monthsString);
